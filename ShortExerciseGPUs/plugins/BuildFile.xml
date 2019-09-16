@@ -1,0 +1,6 @@
+<use name="DataFormats/Math"/>
+<use name="FWCore/Framework"/>
+<use name="FWCore/ParameterSet"/>
+<use name="FWCore/PluginManager"/>
+<flags EDM_PLUGIN="1"/>
+<flags CUDA_FLAGS="--ftz=false --prec-div=true --prec-sqrt=true --fmad=true"/>
