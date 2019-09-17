@@ -9,7 +9,7 @@ process.options = cms.untracked.PSet(
 )
 
 process.source = cms.Source("PoolSource",
-  fileNames = cms.untracked.vstring("file:/data/user/fwyzard/cmspos2019/CMSSW_10_6_3_Patatrack/src/CMSPOS2019/ShortExerciseGPUs/test/cylindricalVectors.root"),
+  fileNames = cms.untracked.vstring("file:cylindricalVectors.root"),
 )
 
 process.convertToCartesianVectors = cms.EDProducer('ConvertToCartesianVectors',
