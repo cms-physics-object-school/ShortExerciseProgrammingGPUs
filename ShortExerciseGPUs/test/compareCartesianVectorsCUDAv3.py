@@ -23,7 +23,7 @@ process.convertToCartesianVectorsReference = cms.EDProducer('ConvertToCartesianV
 process.compareCartesianVectors = cms.EDAnalyzer('CompareCartesianVectors',
   first = cms.InputTag('convertToCartesianVectors'),
   second = cms.InputTag('convertToCartesianVectorsReference'),
-  error = cms.double(1.e-6)
+  error = cms.double(1.e-7)
 )
 
 process.path = cms.Path(process.convertToCartesianVectors + process.convertToCartesianVectorsReference + process.compareCartesianVectors)
